@@ -32,6 +32,6 @@ void Twilio::message(char *toNumber, char *fromNumber, char *body, char * mediaU
     json.concat(String("\",\"MEDIA\":\""));
     json.concat(String(mediaUrl));
     json.concat(String("\"}"));
-
-	Spark.publish("Twilio/message", json.c_str(), 60, PRIVATE);
+    
+    Spark.publish("Twilio/message", json.c_str(), 60, PRIVATE);
 }
