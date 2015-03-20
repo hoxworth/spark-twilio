@@ -1,0 +1,16 @@
+{
+    "eventName": "Twilio/message",
+    "url": "https://api.twilio.com/2010-04-01/Accounts/{{ACCT}}/Messages",
+    "requestType": "POST",
+    "auth": {
+        "username": "{{ACCT}}",
+        "password": "{{TOKEN}}"
+    },
+    "form": {
+        "From" : "{{FROM}}",
+        "To" : "{{TO}}",
+        "Body" : "{{BODY}}",
+        "MediaUrl" : "{{MEDIA}}"
+    },
+    "mydevices": true
+}
