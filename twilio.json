@@ -1,16 +1,15 @@
 {
     "eventName": "Twilio/message",
-    "url": "https://api.twilio.com/2010-04-01/Accounts/{{ACCT}}/Messages",
+    "url": "https://api.twilio.com/2010-04-01/Accounts/PUT_TWILIO_ACCOUNT_HERE/Messages",
     "requestType": "POST",
     "auth": {
-        "username": "{{ACCT}}",
-        "password": "{{TOKEN}}"
+        "username": "PUT_TWILIO_ACCOUNT_HERE",
+        "password": "PUT_TWILIO_PASSWORD_HERE"
     },
     "form": {
-        "From" : "{{FROM}}",
-        "To" : "{{TO}}",
-        "Body" : "{{BODY}}",
-        "MediaUrl" : "{{MEDIA}}"
+        "From" : "PUT_TWILIO_FROM_NUMBER_HERE",
+        "To" : "PUT_TWILIO_TO_NUMBER_HERE",
+        "Body" : "{{BODY}}"
     },
     "mydevices": true
 }
