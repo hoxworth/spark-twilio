@@ -9,15 +9,16 @@ Twilio twilioClient = Twilio();
  *
  */
 int twilio(String command) {
-	twilioClient.message(command.c_str());
+	twilioClient.message("+14107224127", "+15103355285", command.c_str());
 	return 1;
 }
 
 
-
 void setup() {
-	twilioClient.message("I'm alive! call twilio fn to send texts");
 	Spark.function("twilio", twilio);
+
+	twilioClient.message("+14107224127", "+15103355285", 
+		"I'm alive! call twilio fn to send texts");
 }
 
 void loop(){
