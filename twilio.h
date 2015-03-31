@@ -8,8 +8,9 @@ class Twilio {
   	Twilio();
   	~Twilio();
 
-    void message(char *toNumber, char *fromNumber, char *body);
-  	void message(char *toNumber, char *fromNumber, char *body, char * mediaUrl);
+	void message(const char *body);
+    void message(const char *toNumber, const char *fromNumber, const char *body);
+  	void message(const char *toNumber, const char *fromNumber, const char *body, const char * mediaUrl);
 
   private:
   	String *accountSid;
