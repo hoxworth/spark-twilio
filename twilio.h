@@ -5,7 +5,7 @@
 
 class Twilio {
   public:
-  	Twilio(char *aSid, char *aToken);
+  	Twilio();
   	~Twilio();
 
     void message(char *toNumber, char *fromNumber, char *body);
