@@ -1,0 +1,7 @@
+{
+  "name": "twilio",
+  "author": "hoxworth@gmail.com",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "A simple library for sending text messages over Twilio"
+}
